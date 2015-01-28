@@ -88,10 +88,6 @@
   
     
       
-    
-  
-    
-      
       	
       	<li><a href="/pages.html">Pages</a></li>
       	
@@ -141,14 +137,14 @@
     <div class="content">
       
 <p>This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
-Directly following the intro we&#8217;ll learn exactly <em>how</em> Jekyll does what it does.</p>
+Directly following the intro we’ll learn exactly <em>how</em> Jekyll does what it does.</p>
 
 <h2 id="overview">Overview</h2>
 
 <h3 id="what-is-jekyll">What is Jekyll?</h3>
 
 <p>Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
-dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &#8220;a simple, blog aware, static site generator&#8221;.</p>
+dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -209,7 +205,7 @@ help you better understand the code examples contained throughout Jekyll-Bootstr
 
 <h2 id="initial-setup">Initial Setup</h2>
 
-<p>After <a href="/index.html#start-now">installing jekyll</a> you&#8217;ll need to format your website directory in a way jekyll expects.
+<p>After <a href="/index.html#start-now">installing jekyll</a> you’ll need to format your website directory in a way jekyll expects.
 Jekyll-bootstrap conveniently provides the base directory format.</p>
 
 <h3 id="the-jekyll-application-base-format">The Jekyll Application Base Format</h3>
@@ -274,7 +270,7 @@ Jekyll-bootstrap conveniently provides the base directory format.</p>
 <h2 id="content-in-jekyll">Content in Jekyll</h2>
 
 <p>Content in Jekyll is either a post or a page.
-These content &#8220;objects&#8221; get inserted into one or more templates to build the final output for its respective static-page.</p>
+These content “objects” get inserted into one or more templates to build the final output for its respective static-page.</p>
 
 <h3 id="posts-and-pages">Posts and Pages</h3>
 
@@ -300,14 +296,14 @@ Only reverse chronological and chronological ordering is supported in Jekyll.</p
 
 <p><strong>Tags</strong>
 Posts can have tags associated with them as part of their meta-data.
-Tags may be placed on posts by providing them in the post&#8217;s YAML front matter.
+Tags may be placed on posts by providing them in the post’s YAML front matter.
 You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.</p>
 
 <p><strong>Categories</strong>
 Posts may be categorized by providing one or more categories in the YAML front matter.
 Categories offer more significance over tags in that they can be reflected in the URL path to the given post.
 Note categories in Jekyll work in a specific way.
-If you define more than one category you are defining a category hierarchy &#8220;set&#8221;.
+If you define more than one category you are defining a category hierarchy “set”.
 Example:</p>
 
 <pre><code>---
@@ -316,8 +312,8 @@ categories : [lessons, beginner]
 ---
 </code></pre>
 
-<p>This defines the category hierarchy &#8220;lessons/beginner&#8221;. Note this is <em>one category</em> node in Jekyll.
-You won&#8217;t find &#8220;lessons&#8221; and &#8220;beginner&#8221; as two separate categories unless you define them elsewhere as singular categories.</p>
+<p>This defines the category hierarchy “lessons/beginner”. Note this is <em>one category</em> node in Jekyll.
+You won’t find “lessons” and “beginner” as two separate categories unless you define them elsewhere as singular categories.</p>
 
 <h3 id="working-with-pages">Working With Pages</h3>
 
@@ -358,7 +354,7 @@ A nice about page is easy to do and gives the human perspective to your website.
 
 <h2 id="templates-in-jekyll">Templates in Jekyll</h2>
 
-<p>Templates are used to contain a page&#8217;s or post&#8217;s content.
+<p>Templates are used to contain a page’s or post’s content.
 All templates have access to a global site object variable: <code>site</code> as well as a page object variable: <code>page</code>.
 The site variable holds all accessible content and metadata relative to the site.
 The page variable holds accessible data for the given page or post being rendered at that point.</p>
@@ -368,7 +364,7 @@ Templates are created by properly formatting a file and placing it in the <code>
 
 <p><strong>Formatting</strong>
 Templates should be coded in HTML and contain YAML Front Matter.
-All templates can contain Liquid code to work with your site&#8217;s data.</p>
+All templates can contain Liquid code to work with your site’s data.</p>
 
 <p><strong>Rending Page/Post Content in a Template</strong>
 There is a special variable in all templates named : <code>content</code>.
@@ -387,7 +383,7 @@ Render the content variable wherever you want your main content to be injected i
 <h3 id="sub-templates">Sub-Templates</h3>
 
 <p>Sub-templates are exactly templates with the only difference being they
-define another &#8220;root&#8221; layout/template within their YAML Front Matter.
+define another “root” layout/template within their YAML Front Matter.
 This essentially means a template will render inside of another template.</p>
 
 <h3 id="includes">Includes</h3>
@@ -419,10 +415,10 @@ GitHub cannot afford to run arbitrary code on their servers so they lock develop
 <h3 id="liquid-is-not-programmer-friendly">Liquid is Not Programmer-Friendly.</h3>
 
 <p>The short story is liquid is not real code and its not intended to execute real code.
-The point being you can&#8217;t do jackshit in liquid that hasn&#8217;t been allowed explicitly by the implementation.
-What&#8217;s more you can only access data-structures that have been explicitly passed to the template.</p>
+The point being you can’t do jackshit in liquid that hasn’t been allowed explicitly by the implementation.
+What’s more you can only access data-structures that have been explicitly passed to the template.</p>
 
-<p>In Jekyll&#8217;s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins.
+<p>In Jekyll’s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins.
 Both of which cannot be supported by GitHub Pages.</p>
 
 <p>As a programmer - this is very frustrating.</p>
@@ -431,9 +427,9 @@ Both of which cannot be supported by GitHub Pages.</p>
 suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.</p>
 
 <p><strong>Aside</strong>
-My personal stance is to not invest time trying to hack liquid. It&#8217;s really unnecessary
-<em>from a programmer&#8217;s</em> perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code)
-you are better off sticking with ruby. Toward that end I&#8217;ve built <a href="http://github.com/plusjade/mustache-with-jekyll">Mustache-with-Jekyll</a></p>
+My personal stance is to not invest time trying to hack liquid. It’s really unnecessary
+<em>from a programmer’s</em> perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code)
+you are better off sticking with ruby. Toward that end I’ve built <a href="http://github.com/plusjade/mustache-with-jekyll">Mustache-with-Jekyll</a></p>
 
 <h2 id="static-assets">Static Assets</h2>
 
@@ -469,7 +465,7 @@ Jekyll untouched and reside on your blog in the exact structure and format they 
 
 <h3 id="formatting-files-for-parsing">Formatting Files for Parsing.</h3>
 
-<p>We&#8217;ve outlined the need for valid formatting using <strong>YAML Front Matter</strong>.
+<p>We’ve outlined the need for valid formatting using <strong>YAML Front Matter</strong>.
 Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty.
 This is the only way Jekyll knows you want the file processed.</p>
 
@@ -494,12 +490,12 @@ The data inside the block must be valid YAML.</p>
 
 <p>The <code>layout</code> parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.
 If a template file specifies its own layout, it is effectively being used as a <code>sub-template.</code>
-That is to say loading a post file into a template file that refers to another template file with work in the way you&#8217;d expect; as a nested sub-template.</p>
+That is to say loading a post file into a template file that refers to another template file with work in the way you’d expect; as a nested sub-template.</p>
 
 <h2 id="how-jekyll-generates-the-final-static-files">How Jekyll Generates the Final Static Files.</h2>
 
-<p>Ultimately, Jekyll&#8217;s job is to generate a static representation of your website.
-The following is an outline of how that&#8217;s done:</p>
+<p>Ultimately, Jekyll’s job is to generate a static representation of your website.
+The following is an outline of how that’s done:</p>
 
 <ol>
   <li>
@@ -515,20 +511,20 @@ The following is an outline of how that&#8217;s done:</p>
   <li>
     <p><strong>Jekyll liquifies posts and templates.</strong>
   Next jekyll loops through each post file and converts (through markdown or textile) and <strong>liquifies</strong> the post inside of its respective layout(s).
-  Once the post is parsed and liquified inside the the proper layout structure, the layout itself is &#8220;liquified&#8221;.
+  Once the post is parsed and liquified inside the the proper layout structure, the layout itself is “liquified”.
  <strong>Liquification</strong> is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler
   hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.</p>
   </li>
   <li>
     <p><strong>Jekyll generates output.</strong>
- Finally the liquid templates are &#8220;rendered&#8221;, thereby processing any liquid syntax provided in the templates
+ Finally the liquid templates are “rendered”, thereby processing any liquid syntax provided in the templates
  and saving the final, static representation of the file.</p>
   </li>
 </ol>
 
 <p><strong>Notes.</strong>
 Because Jekyll computes the entire site in one fell swoop, each template is given access to
-a global <code>site</code> hash that contains useful data. It is this data that you&#8217;ll iterate through and format
+a global <code>site</code> hash that contains useful data. It is this data that you’ll iterate through and format
 using the Liquid tags and filters in order to render it onto a given page.</p>
 
 <p>Remember, in Jekyll you are an end-user. Your API has only two components:</p>
@@ -553,7 +549,7 @@ As noted, our main programming constraint is the fact that our API is limited to
 <h2 id="next-steps">Next Steps</h2>
 
 <p>Please take a look at []()
-or jump right into <a href="">Usage</a> if you&#8217;d like.</p>
+or jump right into <a href="">Usage</a> if you’d like.</p>
 
     </div>
 
