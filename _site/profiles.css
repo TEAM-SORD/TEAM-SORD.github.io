@@ -1,0 +1,120 @@
+body {
+	margin:0px;
+	padding:0px;
+}
+
+
+.image-thumb {
+	position:relative;
+	height: 300px;
+	width: 50%;
+	float: left;
+	background-size: cover;
+	background-position: center center;	
+}
+
+.image-thumb ul {
+	display: none;
+	list-style: none;
+	position:absolute;
+	left:10px;
+	bottom: 10px;
+}
+
+.image-thumb ul li {
+	float:left;
+	margin-right: 10px;
+}
+
+.image-thumb ul li img {
+	width:40px;
+	height:40px;
+
+}
+
+.image-thumb:hover ul {
+	display:block;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+
+
+/*@media screen and (max-width:1200px) {
+	.image-thumb {
+		width: 33%;
+	}
+}
+
+ @media screen and (max-width:1000px) {
+	.image-thumb {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.image-thumb {
+		width: 100%;
+	}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tm1:hover{
+	background-image: url(images/profile/dave-front.jpg);
+}
+
+.tm2:hover {
+		background-image: url(images/profile/olu-front.jpg);
+}
+
+.tm3:hover {
+	background-image: url(images/profile/sarah-front.jpeg);
+}
+
+.tm4:hover {
+		background-image: url(images/profile/ron-front.jpg);
+}
+
+.tm1 {
+		background-image: url(images/profile/dave-side.jpg);
+}
+
+.tm2 {
+		background-image: url(images/profile/olu-side.jpg);
+}
+
+.tm3 {
+		background-image: url(images/profile/sarah-side.jpg);
+}
+
+.tm4 {
+		background-image: url(images/profile/ron-side.png);
+}
+

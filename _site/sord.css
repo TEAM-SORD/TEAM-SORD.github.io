@@ -1,0 +1,28 @@
+
+
+section {
+padding: 100px 0;	
+}
+
+section h2 {
+margin: 0;
+font-size: 3em;
+}
+
+#projects .portfolio-item {
+right: 0;
+margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+display: block;
+position: relative;
+margin: 0 auto;
+max-width: 400px;
+}
+
+body {
+	background-color: teal;
+	font-family: 'Orbitron', serif;
+}
+
