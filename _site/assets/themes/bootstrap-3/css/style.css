@@ -14,14 +14,19 @@
   float: right; }*/
 
 /* Jekyll Bootstrap Colors */
+#headen{
+    height: 300px;
+}
+
 .landing-area{
 	background-image: url(/img/landing-area.jpg);
+    background-attachment: fixed;
 	position:relative;
 	height: 800px;
 	width: 100%;
 	float: left;
-	background-size: cover;
-	background-position: center center;	
+	background-size:cover;
+	background-position: 0px 0px;	
 }
 
 .landing-area h1 {
