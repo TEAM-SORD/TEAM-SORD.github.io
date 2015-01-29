@@ -1,9 +1,9 @@
 
 
 section {
-padding: 100px 0;
-	
+padding: 100px 0;	
 }
+
 section h2 {
 margin: 0;
 font-size: 3em;
@@ -13,19 +13,16 @@ font-size: 3em;
 right: 0;
 margin: 0 0 15px;
 }
+
 #portfolio .portfolio-item .portfolio-link {
 display: block;
 position: relative;
 margin: 0 auto;
 max-width: 400px;
 }
+
 body {
 	background-color: teal;
 	font-family: 'Orbitron', serif;
-<<<<<<< HEAD
 }
 
-=======
-
-}
->>>>>>> 34eccac20f379d15dfdd7125845c359c943e1911
