@@ -1,48 +1,11 @@
+---
+layout: default
+---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Hello from Team SORD!</title>
-    
-    <meta name="author" content="Name Lastname">
-
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap styles -->
-    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Optional theme -->
-    <!--link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"-->
-    <!-- Sticky Footer -->
-    <link href="/assets/themes/bootstrap-3/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
-    <!-- Custom styles -->
-    <link href="/assets/themes/bootstrap-3/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <!--Google Fonts DB-->
-    <link href='http://fonts.googleapis.com/css?family=Abel|Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Orbitron:400,500,700' rel='stylesheet' type='text/css'>
-
-
-
-    <!-- Custom CSS -->
-    <link href="sord.css" rel="stylesheet">
-
-    
-
-
-    <!-- atom & rss feed -->
-    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-    <link rel="stylesheet" type="text/css" href="sord.css">
-  </head>
-
-<body id="page-top" class="index">
-<!-- Navigation -->
+<section class="content">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -52,7 +15,7 @@
         </button>
         <a class="navbar-brand" href="#page-top">SORD</a>
       </div>
-<!-- Collect the nav links, forms, and other content for toggling -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="hidden">
@@ -71,91 +34,93 @@
       </div>
     <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
+  <!-- /.
+  container-fluid -->
   </nav>
-
-<!--TEAM PROFILE SECTION -->
-<section id="team">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>MEET THE TEAM</h2>
-      </div>
-    </div>
-    <div class = "col-sm-4">
-      <img src="http://scienceblogs.com/gregladen/files/2012/12/Beautifull-cat-cats-14749885-1600-1200.jpg" class="cat2">
-    </div>
-  </div>
 </section>
 
-<!-- Project Section -->
-<section id="projects">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>PROJECT BLOGS</h2>
+<section id="team">
+  <div class='container-fluid'>
+    <h1> MEET THE TEAM </h1>
+    <section>
+      <!--This section containes the new team profile img with hover states and social links -->
+      <div class="image-thumb tm1">
+      <div class="social-links">
+        <ul>
+          <li><img src="img/icons/linkedin.png"/></li>
+          <li><img src="img/icons/twitter.png"/></li>
+          <li><img src="img/icons/github.png"/></li>
+          <li><img src="img/icons/codewars.jpeg"/></li>
+        </ul>
+      </div>
+    </div>
+    <div class="image-thumb tm2">
+      <div class="social-links">
+        <ul>
+          <li><img src="img/icons/linkedin.png"/></li>
+          <li><img src="img/icons/twitter.png"/></li>
+          <li><img src="img/icons/github.png"/></li>
+          <li><img src="img/icons/codewars.jpeg"/></li>
+
+        </ul>
       </div>
     </div>
     
-    <div class="row">
-      <div class="col-sm-4 project-item">
-        <a href="#projectBlog1" class="project-link" data-toggle="modal">
-        <div class="caption">
-          <div class="caption-content">
-            <i class="fa fa-search-plus fa-3x"></i>
-          </div>
-        </div>
-        <img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" class="cat" alt="">
+    <div class="image-thumb tm3">
+      <div class="social-links">
+        <ul>
+          <li><img src="img/icons/linkedin.png"/></li>
+          <li><img src="img/icons/twitter.png"/></li>
+          <li><img src="img/icons/github.png"/></li>
+          <li><img src="img/icons/codewars.jpeg"/></li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="image-thumb tm4">
+      <div class="social-links">
+        <ul>
+          <li><img src="img/icons/linkedin.png"/></li>
+          <li><img src="img/icons/twitter.png"/></li>
+          <li><img src="img/icons/github.png"/></li>
+          <li><img src="img/icons/codewars.jpeg"/></li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class"clear"></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class='container-fluid'>
+    <h1> PROJECT BLOGS </h1>
+    <ul class="entries">
+      {% for post in site.posts %}
+     
+      <li>
+        <a href="{{ post.url }}">
+          <img src="{{ post.image }}" />
+          <h3>{{ post.title }}</h3>
         </a>
-      </div>
-     </div>
+      </li>
+     
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
-<!--CONTACT INFO SECTION-->
-<section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Contacts</h2>
-        
-      </div>
-
-    </div>
-    <div class = "col-sm-4">
-      <img src="http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg" class="cat3">
-    </div>
+<section id='contact'>
+  <div class='container-fluid'>
+    <h1>CONTACT</h1>
   </div>
 </section>
 
-    <div id="footer">
-      <div class="container">
-        <p>&copy; 2015 Name Lastname
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </div>
-    </div>
+<section role="banner">
+  <img src="/img/banner.jpg" />
+</section></
+ 
 
-    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="/assets/themes/bootstrap-3/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-  </body>
-
-</html>
 
