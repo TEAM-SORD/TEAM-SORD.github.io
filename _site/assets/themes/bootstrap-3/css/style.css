@@ -14,8 +14,8 @@
   float: right; }*/
 
 /* Jekyll Bootstrap Colors */
-#headen{
-    height: 300px;
+#headen {
+    height: 400px;
 }
 
 .landing-area{
@@ -34,9 +34,10 @@
     color:white;
     font-size:200px;
     font-weight:bold;
+    font-family: 'Orbitron', serif;
     text-align:center;
     position: absolute;
-    top: 15%;
+    top: 25%;
     left:0;
     right:0;
     bottom:50%;
