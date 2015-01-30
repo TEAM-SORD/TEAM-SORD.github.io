@@ -14,13 +14,60 @@
   float: right; }*/
 
 /* Jekyll Bootstrap Colors */
-#headen{
-    height: 550px;
+
+html, body { 
+  height:100%;
+  margin:0;
+  padding:0; 
+}
+
+#team:before {
+    display: block;
+    content: "";
+    height: 15px;
+    margin: -50px 0 0;
+}
+
+#projects:before {
+    display: block;
+    content: "";
+    height: 15px;
+    margin: -50px 0 0;
+}
+
+#contact:before {
+    display: block;
+    content: "";
+    height: 15px;
+    margin: -50px 0 0;
+}
+
+#team {
+  padding: 90px 0 20px;
+}
+
+#projects {
+  padding: 90px 0 20px;
+}
+
+#team, #projects, #contact {
+  height:auto;
+  min-height: 100%;
+}
+
+#contact {
+  padding: 90px 0;
+}
+
+section {
+  clear: both;
+  height: auto;
+  min-height: 100%;
 }
 
 .landing-area{
 	background-image: url(/img/landing-area.jpg);
-    background-attachment: fixed;
+  background-attachment: fixed;
 	position:relative;
 	height: 800px;
 	width: 100%;
@@ -32,12 +79,12 @@
 .landing-area h1 {
     z-index:100;   
     color:white;
+    font-family: 'Orbitron', serif;
     font-size:200px;
     font-weight:bold;
-    font-family: 'Orbitron', serif;
     text-align:center;
     position: absolute;
-    top: 25%;
+    top: 35%;
     left:0;
     right:0;
     bottom:50%;

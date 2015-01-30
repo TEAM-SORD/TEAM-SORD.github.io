@@ -1,8 +1,8 @@
 
 http://username.github.io/archive.html
 http://username.github.io/categories.html
-http://username.github.io/index.html
 http://username.github.io/projects/index.html
+http://username.github.io/index.html
 http://username.github.io/pages.html
 http://username.github.io/sitemap.txt
 http://username.github.io/tags.html
