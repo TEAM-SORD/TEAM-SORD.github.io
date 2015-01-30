@@ -15,7 +15,7 @@
 
 /* Jekyll Bootstrap Colors */
 #headen{
-    height: 550px;
+ height: 550px;
 }
 
 .landing-area{
@@ -34,10 +34,10 @@
     color:white;
     font-size:200px;
     font-weight:bold;
-    font-family: 'Orbitron', serif;
     text-align:center;
     position: absolute;
-    top: 25%;
+    font-family: 'Orbitron', serif;
+    top: 30%;
     left:0;
     right:0;
     bottom:50%;
