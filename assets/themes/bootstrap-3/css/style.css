@@ -15,10 +15,17 @@
 
 /* Jekyll Bootstrap Colors */
 
-html, body { 
-  height:100%;
-  margin:0;
-  padding:0; 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.navbarpadding {
+  padding-right: 10px;
+}
+
+html, body, .container-fluid { 
+  height:100vh; 
 }
 
 #team:before {
@@ -42,21 +49,12 @@ html, body {
     margin: -50px 0 0;
 }
 
-#team {
-  padding: 90px 0 20px;
-}
-
-#projects {
-  padding: 90px 0 20px;
+#team, #projects, #contact {
+  padding: 80px 0 20px;
 }
 
 #team, #projects, #contact {
-  height:auto;
-  min-height: 100%;
-}
-
-#contact {
-  padding: 90px 0;
+  height:100vh;
 }
 
 section {
@@ -72,8 +70,10 @@ section {
 	height: 800px;
 	width: 100%;
 	float: left;
-	background-size:cover;
 	background-position: 0px 0px;	
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
 }
 
 .landing-area h1 {

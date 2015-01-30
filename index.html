@@ -2,11 +2,10 @@
 layout: default
 ---
 
-
 <section class="content">
 <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top navbarpadding">
+    <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -34,59 +33,60 @@ layout: default
           </li>
         </ul>
       </div>
-    <!-- /.navbar-collapse -->
     </div>
+    <!-- /.navbar-collapse -->
   <!-- /.
   container-fluid -->
   </nav>
 </section>
+
 <section>
-    <div class="landing-area">			
+  <div class='container-fluid'>
+    <div class='col-xs-12 nopadding'>
+      <div class="landing-area">			
         <h1>S.O.R.D</h1>	
+      </div>
     </div>
+  </div> 
 </section>
 
-<section class="group" id="team">
-    <div class='container-fluid'>
-    <h1> MEET THE TEAM </h1>
+<section id="team">
+  <h1> MEET THE TEAM </h1>
+  <div class='container-fluid'>
+    <div class='col-xs-12 nopadding'>
+    <!--This section containes the new team profile img with hover states and social links -->
+    <div class="image-thumb tm1">
+    <div class="social-links">
+      <ul>
+        <li><img src="img/icons/linkedin.png"/></li>
+        <li><img src="img/icons/twitter.png"/></li>
+        <li><img src="img/icons/github.png"/></li>
+        <li><img src="img/icons/codewars.jpeg"/></li>
+      </ul>
     </div>
-</section>
-<div id="headen">
-</div>
-    <section>
-      <!--This section containes the new team profile img with hover states and social links -->
-      <div class="image-thumb tm1">
-      <div class="social-links">
-        <ul>
-          <li><img src="img/icons/linkedin.png"/></li>
-          <li><img src="img/icons/twitter.png"/></li>
-          <li><img src="img/icons/github.png"/></li>
-          <li><img src="img/icons/codewars.jpeg"/></li>
-        </ul>
-      </div>
+  </div>
+  <div class="image-thumb tm2">
+    <div class="social-links">
+      <ul>
+        <li><img src="img/icons/linkedin.png"/></li>
+        <li><img src="img/icons/twitter.png"/></li>
+        <li><img src="img/icons/github.png"/></li>
+        <li><img src="img/icons/codewars.jpeg"/></li>
+      </ul>
     </div>
-    <div class="image-thumb tm2">
-      <div class="social-links">
-        <ul>
-          <li><img src="img/icons/linkedin.png"/></li>
-          <li><img src="img/icons/twitter.png"/></li>
-          <li><img src="img/icons/github.png"/></li>
-          <li><img src="img/icons/codewars.jpeg"/></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="image-thumb tm3">
-      <div class="social-links">
-        <ul>
-          <li><img src="img/icons/linkedin.png"/></li>
-          <li><img src="img/icons/twitter.png"/></li>
-          <li><img src="img/icons/github.png"/></li>
-          <li><img src="img/icons/codewars.jpeg"/></li>
+  </div>
+  
+  <div class="image-thumb tm3">
+    <div class="social-links">
+      <ul>
+        <li><img src="img/icons/linkedin.png"/></li>
+        <li><img src="img/icons/twitter.png"/></li>
+        <li><img src="img/icons/github.png"/></li>
+        <li><img src="img/icons/codewars.jpeg"/></li>
 
-        </ul>
-      </div>
+      </ul>
     </div>
+  </div>
 
     <div class="image-thumb tm4">
       <div class="social-links">
@@ -95,41 +95,37 @@ layout: default
           <li><img src="img/icons/twitter.png"/></li>
           <li><img src="img/icons/github.png"/></li>
           <li><img src="img/icons/codewars.jpeg"/></li>
-
         </ul>
+        </div>
       </div>
     </div>
-
-    <div class"clear"></div>
   </div>
 </section>
 
 <section id="projects">
   <div class='container-fluid'>
-    <h1> PROJECT BLOGS </h1>
-    <ul class="entries">
+    <div class='col-xs-12 nopadding'>
+      <h1> PROJECT BLOGS </h1>
+      <ul class="entries">
       {% for post in site.posts %}
-     
-      <li>
-        <a href="{{ post.url }}">
-          <img src="{{ post.image }}" />
-          <h3>{{ post.title }}</h3>
-        </a>
-      </li>
-     
+        <li>
+          <a href="{{ post.url }}">
+            <img src="{{ post.image }}" />
+            <h3>{{ post.title }}</h3>
+          </a>
+        </li>
       {% endfor %}
-    </ul>
+      </ul>
+    </div>
   </div>
 </section>
 
 <section id='contact'>
   <div class='container-fluid'>
-    <h1>CONTACT</h1>
+    <div class='col-xs-12 nopadding'>
+      <h1>CONTACT</h1>
+    </div>
   </div>
-</section>
-
-<section role="banner">
-  <img src="/img/banner.jpg" />
 </section>
  
 
