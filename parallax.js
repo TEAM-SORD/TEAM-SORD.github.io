@@ -1,9 +1,4 @@
-//$(document).ready(function(){
-
-function main(function() {
-    
-
-   
+   $(document).ready(function(){
    $(window).scroll(function(event) {
        
        var scrollPosition = $(window).scrollTop();
@@ -21,4 +16,3 @@ function main(function() {
 
 
 
-$(document).ready(main);
