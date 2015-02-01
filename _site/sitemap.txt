@@ -1,10 +1,13 @@
 
 http://username.github.io/archive.html
 http://username.github.io/categories.html
-http://username.github.io/index.html
 http://username.github.io/projects/index.html
+http://username.github.io/index.html
 http://username.github.io/pages.html
 http://username.github.io/sitemap.txt
 http://username.github.io/tags.html
 
+http://username.github.io/meta/2015/01/30/Oluoluoxenfree
+http://username.github.io/meta/2015/01/30/FridayisCryDay
 http://username.github.io/meta/2015/01/28/FirstCodeReview
+http://username.github.io/meta/2015/01/28/Day2JekyllHell

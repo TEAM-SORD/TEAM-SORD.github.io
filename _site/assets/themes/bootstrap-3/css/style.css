@@ -129,6 +129,27 @@ header {
   height:100%;
 }
 
+#blogbox a{
+  color: #000000;
+}
+#blogbox img {
+  height: 400px;
+  width: 350px;
+}
+
+.centercontainer{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.details{
+  width: 33%;
+  float: left;
+  background-color: rgb(219,213,313);
+  height: 200px;
+  padding-top: 90px;
+}
 body {
   margin:0px;
   padding:0px;
@@ -160,13 +181,6 @@ body {
 .image-thumb ul li img {
   width:40px;
   height:40px;
-
-}
-
-.image-thumb ul li img:hover {
-  width:50px;
-  height:50px;
-  transition:0.35s
 
 }
 

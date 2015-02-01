@@ -1,8 +1,10 @@
 ---
-layout: project_blog
+layout: post
 title: Project Blog Code Review!
 category: Meta
-image: img/crayones.jpg
+image: img/posts/pigeon.jpg
+author: Sarah
+date: 2015-01-28
 
 excerpt: First real day of developing the team blog today.  LOTS to get our heads around to say the least.  Had our first code reviews too.  We have a lot of work to do! 
 

@@ -106,27 +106,26 @@ layout: default
   <div class='container-fluid'>
     <div class='col-xs-12 nopadding'>
       <h1> PROJECT BLOGS </h1>
-      <ul class="entries">
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">
-            <img src="{{ post.image }}" />
-            <h3>{{ post.title }}</h3>
-          </a>
-        </li>
-      {% endfor %}
-      </ul>
     </div>
+      {% for post in site.posts %}
+      <div id='blogbox' class="col-xs-4">
+            <a href="{{ post.url }}">
+              <img class='img-rounded' id='blogpic' src="{{ post.image }}" />
+              <h3>{{ post.title }}</h3>
+              <p>
+                <i class="icon-clock"></i>
+                  <time datetime="{{page.date|date:"%B-%d-%Y"}}">{{page.date|date:"%B %d %Y"}}
+                  </time>
+              </p>
+              <h5> written by {{ post.author}}</h5>
+              <p> {{post.excerpt }}</p>
+            </a>
+      </div>
+      {% endfor %}
   </div>
 </section>
 
-<section id='contact'>
-  <div class='container-fluid'>
-    <div class='col-xs-12 nopadding'>
-      <h1>CONTACT</h1>
-    </div>
-  </div>
-</section>
+ 
  
 
 
