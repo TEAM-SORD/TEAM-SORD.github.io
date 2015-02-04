@@ -1,0 +1,454 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'mocha' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'mocha', null ]
+5 verbose cache add name=undefined spec="mocha" args=["mocha",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'mocha',
+6 verbose parsed url   path: 'mocha',
+6 verbose parsed url   href: 'mocha' }
+7 silly lockFile a619da43-mocha mocha
+8 verbose lock mocha /home/olu/.npm/a619da43-mocha.lock
+9 silly lockFile a619da43-mocha mocha
+10 silly lockFile a619da43-mocha mocha
+11 verbose addNamed [ 'mocha', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile b9899f31-mocha mocha@
+14 verbose lock mocha@ /home/olu/.npm/b9899f31-mocha.lock
+15 silly addNameRange { name: 'mocha', range: '*', hasData: false }
+16 verbose url raw mocha
+17 verbose url resolving [ 'https://registry.npmjs.org/', './mocha' ]
+18 verbose url resolved https://registry.npmjs.org/mocha
+19 info trying registry request attempt 1 at 14:40:11
+20 http GET https://registry.npmjs.org/mocha
+21 http 200 https://registry.npmjs.org/mocha
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Fri, 30 Jan 2015 14:40:11 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly registry.get     etag: '"EDK1Z8MOR2V4SMT3X5SQYL2P3"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=60',
+22 silly registry.get     'content-length': '111558',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '24',
+22 silly registry.get     'x-served-by': 'cache-ams4136-AMS',
+22 silly registry.get     'x-cache': 'HIT',
+22 silly registry.get     'x-cache-hits': '1',
+22 silly registry.get     'x-timer': 'S1422628811.891991,VS0,VE0',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'mocha', range: '*', hasData: true }
+24 silly addNameRange versions [ 'mocha',
+24 silly addNameRange   [ '0.0.1-alpha1',
+24 silly addNameRange     '0.0.1-alpha2',
+24 silly addNameRange     '0.0.1-alpha3',
+24 silly addNameRange     '0.0.1-alpha4',
+24 silly addNameRange     '0.0.1-alpha5',
+24 silly addNameRange     '0.0.1-alpha6',
+24 silly addNameRange     '0.0.1',
+24 silly addNameRange     '0.0.2',
+24 silly addNameRange     '0.0.3',
+24 silly addNameRange     '0.0.4',
+24 silly addNameRange     '0.0.5',
+24 silly addNameRange     '0.0.6',
+24 silly addNameRange     '0.0.7',
+24 silly addNameRange     '0.0.8',
+24 silly addNameRange     '0.1.0',
+24 silly addNameRange     '0.2.0',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '0.3.1',
+24 silly addNameRange     '0.3.2',
+24 silly addNameRange     '0.3.3',
+24 silly addNameRange     '0.3.4',
+24 silly addNameRange     '0.3.6',
+24 silly addNameRange     '0.4.0',
+24 silly addNameRange     '0.5.0',
+24 silly addNameRange     '0.6.0',
+24 silly addNameRange     '0.7.0',
+24 silly addNameRange     '0.7.1',
+24 silly addNameRange     '0.8.0',
+24 silly addNameRange     '0.8.1',
+24 silly addNameRange     '0.9.0',
+24 silly addNameRange     '0.10.0',
+24 silly addNameRange     '0.10.1',
+24 silly addNameRange     '0.10.2',
+24 silly addNameRange     '0.11.0',
+24 silly addNameRange     '0.12.0',
+24 silly addNameRange     '0.12.1',
+24 silly addNameRange     '0.13.0',
+24 silly addNameRange     '0.14.0',
+24 silly addNameRange     '0.14.1',
+24 silly addNameRange     '1.0.0',
+24 silly addNameRange     '1.0.1',
+24 silly addNameRange     '1.0.2',
+24 silly addNameRange     '1.0.3',
+24 silly addNameRange     '1.1.0',
+24 silly addNameRange     '1.2.0',
+24 silly addNameRange     '1.2.1',
+24 silly addNameRange     '1.2.2',
+24 silly addNameRange     '1.3.0',
+24 silly addNameRange     '1.3.1',
+24 silly addNameRange     '1.3.2',
+24 silly addNameRange     '1.4.0',
+24 silly addNameRange     '1.4.1',
+24 silly addNameRange     '1.4.2',
+24 silly addNameRange     '1.4.3',
+24 silly addNameRange     '1.5.0',
+24 silly addNameRange     '1.6.0',
+24 silly addNameRange     '1.7.0',
+24 silly addNameRange     '1.7.1',
+24 silly addNameRange     '1.7.2',
+24 silly addNameRange     '1.7.3',
+24 silly addNameRange     '1.7.4',
+24 silly addNameRange     '1.8.0',
+24 silly addNameRange     '1.8.1',
+24 silly addNameRange     '1.8.2',
+24 silly addNameRange     '1.9.0',
+24 silly addNameRange     '1.10.0',
+24 silly addNameRange     '1.11.0',
+24 silly addNameRange     '1.12.0',
+24 silly addNameRange     '1.12.1',
+24 silly addNameRange     '1.13.0',
+24 silly addNameRange     '1.14.0',
+24 silly addNameRange     '1.15.0',
+24 silly addNameRange     '1.15.1',
+24 silly addNameRange     '1.16.0',
+24 silly addNameRange     '1.16.1',
+24 silly addNameRange     '1.16.2',
+24 silly addNameRange     '1.17.0',
+24 silly addNameRange     '1.17.1',
+24 silly addNameRange     '1.18.0',
+24 silly addNameRange     '1.18.1',
+24 silly addNameRange     '1.18.2',
+24 silly addNameRange     '1.19.0',
+24 silly addNameRange     '1.20.0',
+24 silly addNameRange     '1.20.1',
+24 silly addNameRange     '1.21.0',
+24 silly addNameRange     '1.21.1',
+24 silly addNameRange     '1.21.2',
+24 silly addNameRange     '1.21.3',
+24 silly addNameRange     '1.21.4',
+24 silly addNameRange     '1.21.5',
+24 silly addNameRange     '2.0.0',
+24 silly addNameRange     '2.0.1',
+24 silly addNameRange     '2.1.0' ] ]
+25 verbose addNamed [ 'mocha', '2.1.0' ]
+26 verbose addNamed [ '2.1.0', '2.1.0' ]
+27 silly lockFile f9a4f261-mocha-2-1-0 mocha@2.1.0
+28 verbose lock mocha@2.1.0 /home/olu/.npm/f9a4f261-mocha-2-1-0.lock
+29 silly lockFile ff48524b--npmjs-org-mocha-mocha-2-1-0-tgz https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+30 verbose lock https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz /home/olu/.npm/ff48524b--npmjs-org-mocha-mocha-2-1-0-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz',
+31 verbose addRemoteTarball   '77752fe592fb9092756827af46cd3eae1b83671c' ]
+32 info retry fetch attempt 1 at 14:40:12
+33 verbose fetch to= /home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/tmp.tgz
+34 http GET https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+35 http 200 https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+36 verbose tar unpack /home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/tmp.tgz
+37 silly lockFile 546cbba7-2338-0-12492098053917289-package tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package
+38 verbose lock tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package /home/olu/.npm/546cbba7-2338-0-12492098053917289-package.lock
+39 silly lockFile 1bd33dee-2338-0-12492098053917289-tmp-tgz tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/tmp.tgz
+40 verbose lock tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/tmp.tgz /home/olu/.npm/1bd33dee-2338-0-12492098053917289-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm modified mode [ 'package.json', 388, 420 ]
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm modified mode [ 'README.md', 388, 420 ]
+46 silly gunzTarPerm extractEntry LICENSE
+47 silly gunzTarPerm modified mode [ 'LICENSE', 388, 420 ]
+48 silly gunzTarPerm extractEntry index.js
+49 silly gunzTarPerm modified mode [ 'index.js', 388, 420 ]
+50 silly gunzTarPerm extractEntry mocha.js
+51 silly gunzTarPerm modified mode [ 'mocha.js', 388, 420 ]
+52 silly gunzTarPerm extractEntry bin/_mocha
+53 silly gunzTarPerm modified mode [ 'bin/_mocha', 453, 485 ]
+54 silly gunzTarPerm extractEntry bin/mocha
+55 silly gunzTarPerm modified mode [ 'bin/mocha', 453, 485 ]
+56 silly gunzTarPerm extractEntry images/error.png
+57 silly gunzTarPerm modified mode [ 'images/error.png', 388, 420 ]
+58 silly gunzTarPerm extractEntry images/ok.png
+59 silly gunzTarPerm modified mode [ 'images/ok.png', 388, 420 ]
+60 silly gunzTarPerm extractEntry lib/utils.js
+61 silly gunzTarPerm modified mode [ 'lib/utils.js', 388, 420 ]
+62 silly gunzTarPerm extractEntry lib/hook.js
+63 silly gunzTarPerm modified mode [ 'lib/hook.js', 388, 420 ]
+64 silly gunzTarPerm extractEntry lib/mocha.js
+65 silly gunzTarPerm modified mode [ 'lib/mocha.js', 388, 420 ]
+66 silly gunzTarPerm extractEntry lib/ms.js
+67 silly gunzTarPerm modified mode [ 'lib/ms.js', 388, 420 ]
+68 silly gunzTarPerm extractEntry lib/context.js
+69 silly gunzTarPerm modified mode [ 'lib/context.js', 388, 420 ]
+70 silly gunzTarPerm extractEntry lib/runnable.js
+71 silly gunzTarPerm modified mode [ 'lib/runnable.js', 388, 420 ]
+72 silly gunzTarPerm extractEntry lib/runner.js
+73 silly gunzTarPerm modified mode [ 'lib/runner.js', 388, 420 ]
+74 silly gunzTarPerm extractEntry lib/suite.js
+75 silly gunzTarPerm modified mode [ 'lib/suite.js', 388, 420 ]
+76 silly gunzTarPerm extractEntry lib/test.js
+77 silly gunzTarPerm modified mode [ 'lib/test.js', 388, 420 ]
+78 silly gunzTarPerm extractEntry lib/interfaces/bdd.js
+79 silly gunzTarPerm modified mode [ 'lib/interfaces/bdd.js', 388, 420 ]
+80 silly gunzTarPerm extractEntry lib/interfaces/exports.js
+81 silly gunzTarPerm modified mode [ 'lib/interfaces/exports.js', 388, 420 ]
+82 silly gunzTarPerm extractEntry lib/interfaces/index.js
+83 silly gunzTarPerm modified mode [ 'lib/interfaces/index.js', 388, 420 ]
+84 silly gunzTarPerm extractEntry lib/interfaces/qunit.js
+85 silly gunzTarPerm modified mode [ 'lib/interfaces/qunit.js', 388, 420 ]
+86 silly gunzTarPerm extractEntry lib/interfaces/tdd.js
+87 silly gunzTarPerm modified mode [ 'lib/interfaces/tdd.js', 388, 420 ]
+88 silly gunzTarPerm extractEntry lib/template.html
+89 silly gunzTarPerm modified mode [ 'lib/template.html', 388, 420 ]
+90 silly gunzTarPerm extractEntry lib/browser/debug.js
+91 silly gunzTarPerm modified mode [ 'lib/browser/debug.js', 388, 420 ]
+92 silly gunzTarPerm extractEntry lib/browser/diff.js
+93 silly gunzTarPerm modified mode [ 'lib/browser/diff.js', 388, 420 ]
+94 silly gunzTarPerm extractEntry lib/browser/escape-string-regexp.js
+95 silly gunzTarPerm modified mode [ 'lib/browser/escape-string-regexp.js', 388, 420 ]
+96 silly gunzTarPerm extractEntry lib/browser/events.js
+97 silly gunzTarPerm modified mode [ 'lib/browser/events.js', 388, 420 ]
+98 silly gunzTarPerm extractEntry lib/browser/fs.js
+99 silly gunzTarPerm modified mode [ 'lib/browser/fs.js', 388, 420 ]
+100 silly gunzTarPerm extractEntry lib/browser/glob.js
+101 silly gunzTarPerm modified mode [ 'lib/browser/glob.js', 388, 420 ]
+102 silly gunzTarPerm extractEntry lib/browser/path.js
+103 silly gunzTarPerm modified mode [ 'lib/browser/path.js', 388, 420 ]
+104 silly gunzTarPerm extractEntry lib/browser/progress.js
+105 silly gunzTarPerm modified mode [ 'lib/browser/progress.js', 388, 420 ]
+106 silly gunzTarPerm extractEntry lib/browser/tty.js
+107 silly gunzTarPerm modified mode [ 'lib/browser/tty.js', 388, 420 ]
+108 silly gunzTarPerm extractEntry lib/reporters/base.js
+109 silly gunzTarPerm modified mode [ 'lib/reporters/base.js', 388, 420 ]
+110 silly gunzTarPerm extractEntry lib/reporters/index.js
+111 silly gunzTarPerm modified mode [ 'lib/reporters/index.js', 388, 420 ]
+112 silly gunzTarPerm extractEntry lib/reporters/json-cov.js
+113 silly gunzTarPerm modified mode [ 'lib/reporters/json-cov.js', 388, 420 ]
+114 silly gunzTarPerm extractEntry lib/reporters/json-stream.js
+115 silly gunzTarPerm modified mode [ 'lib/reporters/json-stream.js', 388, 420 ]
+116 silly gunzTarPerm extractEntry lib/reporters/json.js
+117 silly gunzTarPerm modified mode [ 'lib/reporters/json.js', 388, 420 ]
+118 silly gunzTarPerm extractEntry lib/reporters/html.js
+119 silly gunzTarPerm modified mode [ 'lib/reporters/html.js', 388, 420 ]
+120 silly gunzTarPerm extractEntry lib/reporters/list.js
+121 silly gunzTarPerm modified mode [ 'lib/reporters/list.js', 388, 420 ]
+122 silly gunzTarPerm extractEntry lib/reporters/markdown.js
+123 silly gunzTarPerm modified mode [ 'lib/reporters/markdown.js', 388, 420 ]
+124 silly gunzTarPerm extractEntry lib/reporters/min.js
+125 silly gunzTarPerm modified mode [ 'lib/reporters/min.js', 388, 420 ]
+126 silly gunzTarPerm extractEntry lib/reporters/nyan.js
+127 silly gunzTarPerm modified mode [ 'lib/reporters/nyan.js', 388, 420 ]
+128 silly gunzTarPerm extractEntry lib/reporters/progress.js
+129 silly gunzTarPerm modified mode [ 'lib/reporters/progress.js', 388, 420 ]
+130 silly gunzTarPerm extractEntry lib/reporters/html-cov.js
+131 silly gunzTarPerm modified mode [ 'lib/reporters/html-cov.js', 388, 420 ]
+132 silly gunzTarPerm extractEntry lib/reporters/spec.js
+133 silly gunzTarPerm modified mode [ 'lib/reporters/spec.js', 388, 420 ]
+134 silly gunzTarPerm extractEntry lib/reporters/dot.js
+135 silly gunzTarPerm modified mode [ 'lib/reporters/dot.js', 388, 420 ]
+136 silly gunzTarPerm extractEntry lib/reporters/tap.js
+137 silly gunzTarPerm modified mode [ 'lib/reporters/tap.js', 388, 420 ]
+138 silly gunzTarPerm extractEntry lib/reporters/doc.js
+139 silly gunzTarPerm modified mode [ 'lib/reporters/doc.js', 388, 420 ]
+140 silly gunzTarPerm extractEntry lib/reporters/xunit.js
+141 silly gunzTarPerm modified mode [ 'lib/reporters/xunit.js', 388, 420 ]
+142 silly gunzTarPerm extractEntry lib/reporters/landing.js
+143 silly gunzTarPerm modified mode [ 'lib/reporters/landing.js', 388, 420 ]
+144 silly gunzTarPerm extractEntry lib/reporters/templates/coverage.jade
+145 silly gunzTarPerm modified mode [ 'lib/reporters/templates/coverage.jade', 388, 420 ]
+146 silly gunzTarPerm extractEntry lib/reporters/templates/menu.jade
+147 silly gunzTarPerm modified mode [ 'lib/reporters/templates/menu.jade', 388, 420 ]
+148 silly gunzTarPerm extractEntry lib/reporters/templates/script.html
+149 silly gunzTarPerm modified mode [ 'lib/reporters/templates/script.html', 388, 420 ]
+150 silly gunzTarPerm extractEntry lib/reporters/templates/style.html
+151 silly gunzTarPerm modified mode [ 'lib/reporters/templates/style.html', 388, 420 ]
+152 silly gunzTarPerm extractEntry mocha.css
+153 silly gunzTarPerm modified mode [ 'mocha.css', 388, 420 ]
+154 silly lockFile 546cbba7-2338-0-12492098053917289-package tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package
+155 silly lockFile 546cbba7-2338-0-12492098053917289-package tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package
+156 silly lockFile 1bd33dee-2338-0-12492098053917289-tmp-tgz tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/tmp.tgz
+157 silly lockFile 1bd33dee-2338-0-12492098053917289-tmp-tgz tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/tmp.tgz
+158 verbose tar pack [ '/home/olu/.npm/mocha/2.1.0/package.tgz',
+158 verbose tar pack   '/home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package' ]
+159 verbose tarball /home/olu/.npm/mocha/2.1.0/package.tgz
+160 verbose folder /home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package
+161 silly lockFile 546cbba7-2338-0-12492098053917289-package tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package
+162 verbose lock tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package /home/olu/.npm/546cbba7-2338-0-12492098053917289-package.lock
+163 silly lockFile e78be83a--olu-npm-mocha-2-1-0-package-tgz tar:///home/olu/.npm/mocha/2.1.0/package.tgz
+164 verbose lock tar:///home/olu/.npm/mocha/2.1.0/package.tgz /home/olu/.npm/e78be83a--olu-npm-mocha-2-1-0-package-tgz.lock
+165 silly lockFile 546cbba7-2338-0-12492098053917289-package tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package
+166 silly lockFile 546cbba7-2338-0-12492098053917289-package tar:///home/olu/tmp/npm-11927-iWl-w0Ry/1422628812338-0.12492098053917289/package
+167 silly lockFile e78be83a--olu-npm-mocha-2-1-0-package-tgz tar:///home/olu/.npm/mocha/2.1.0/package.tgz
+168 silly lockFile e78be83a--olu-npm-mocha-2-1-0-package-tgz tar:///home/olu/.npm/mocha/2.1.0/package.tgz
+169 silly lockFile 5a676745-home-olu-npm-mocha-2-1-0-package /home/olu/.npm/mocha/2.1.0/package
+170 verbose lock /home/olu/.npm/mocha/2.1.0/package /home/olu/.npm/5a676745-home-olu-npm-mocha-2-1-0-package.lock
+171 silly lockFile 5a676745-home-olu-npm-mocha-2-1-0-package /home/olu/.npm/mocha/2.1.0/package
+172 silly lockFile 5a676745-home-olu-npm-mocha-2-1-0-package /home/olu/.npm/mocha/2.1.0/package
+173 verbose tar unpack /home/olu/.npm/mocha/2.1.0/package.tgz
+174 silly lockFile 5c6ef7d8-home-olu-npm-mocha-2-1-0-package tar:///home/olu/.npm/mocha/2.1.0/package
+175 verbose lock tar:///home/olu/.npm/mocha/2.1.0/package /home/olu/.npm/5c6ef7d8-home-olu-npm-mocha-2-1-0-package.lock
+176 silly lockFile e78be83a--olu-npm-mocha-2-1-0-package-tgz tar:///home/olu/.npm/mocha/2.1.0/package.tgz
+177 verbose lock tar:///home/olu/.npm/mocha/2.1.0/package.tgz /home/olu/.npm/e78be83a--olu-npm-mocha-2-1-0-package-tgz.lock
+178 silly gunzTarPerm modes [ '755', '644' ]
+179 silly gunzTarPerm extractEntry package.json
+180 silly gunzTarPerm extractEntry README.md
+181 silly gunzTarPerm extractEntry LICENSE
+182 silly gunzTarPerm extractEntry index.js
+183 silly gunzTarPerm extractEntry mocha.js
+184 silly gunzTarPerm extractEntry bin/_mocha
+185 silly gunzTarPerm extractEntry bin/mocha
+186 silly gunzTarPerm extractEntry images/error.png
+187 silly gunzTarPerm extractEntry images/ok.png
+188 silly gunzTarPerm extractEntry lib/utils.js
+189 silly gunzTarPerm extractEntry lib/hook.js
+190 silly gunzTarPerm extractEntry lib/mocha.js
+191 silly gunzTarPerm extractEntry lib/ms.js
+192 silly gunzTarPerm extractEntry lib/context.js
+193 silly gunzTarPerm extractEntry lib/runnable.js
+194 silly gunzTarPerm extractEntry lib/runner.js
+195 silly gunzTarPerm extractEntry lib/suite.js
+196 silly gunzTarPerm extractEntry lib/test.js
+197 silly gunzTarPerm extractEntry lib/interfaces/bdd.js
+198 silly gunzTarPerm extractEntry lib/interfaces/exports.js
+199 silly gunzTarPerm extractEntry lib/interfaces/index.js
+200 silly gunzTarPerm extractEntry lib/interfaces/qunit.js
+201 silly gunzTarPerm extractEntry lib/interfaces/tdd.js
+202 silly gunzTarPerm extractEntry lib/template.html
+203 silly gunzTarPerm extractEntry lib/browser/debug.js
+204 silly gunzTarPerm extractEntry lib/browser/diff.js
+205 silly gunzTarPerm extractEntry lib/browser/escape-string-regexp.js
+206 silly gunzTarPerm extractEntry lib/browser/events.js
+207 silly gunzTarPerm extractEntry lib/browser/fs.js
+208 silly gunzTarPerm extractEntry lib/browser/glob.js
+209 silly gunzTarPerm extractEntry lib/browser/path.js
+210 silly gunzTarPerm extractEntry lib/browser/progress.js
+211 silly gunzTarPerm extractEntry lib/browser/tty.js
+212 silly gunzTarPerm extractEntry lib/reporters/base.js
+213 silly gunzTarPerm extractEntry lib/reporters/index.js
+214 silly gunzTarPerm extractEntry lib/reporters/json-cov.js
+215 silly gunzTarPerm extractEntry lib/reporters/json-stream.js
+216 silly gunzTarPerm extractEntry lib/reporters/json.js
+217 silly gunzTarPerm extractEntry lib/reporters/html.js
+218 silly gunzTarPerm extractEntry lib/reporters/list.js
+219 silly gunzTarPerm extractEntry lib/reporters/markdown.js
+220 silly gunzTarPerm extractEntry lib/reporters/min.js
+221 silly gunzTarPerm extractEntry lib/reporters/nyan.js
+222 silly gunzTarPerm extractEntry lib/reporters/progress.js
+223 silly gunzTarPerm extractEntry lib/reporters/html-cov.js
+224 silly gunzTarPerm extractEntry lib/reporters/spec.js
+225 silly gunzTarPerm extractEntry lib/reporters/dot.js
+226 silly gunzTarPerm extractEntry lib/reporters/tap.js
+227 silly gunzTarPerm extractEntry lib/reporters/doc.js
+228 silly gunzTarPerm extractEntry lib/reporters/xunit.js
+229 silly gunzTarPerm extractEntry lib/reporters/landing.js
+230 silly gunzTarPerm extractEntry lib/reporters/templates/coverage.jade
+231 silly gunzTarPerm extractEntry lib/reporters/templates/menu.jade
+232 silly gunzTarPerm extractEntry lib/reporters/templates/script.html
+233 silly gunzTarPerm extractEntry lib/reporters/templates/style.html
+234 silly gunzTarPerm extractEntry mocha.css
+235 silly lockFile 5c6ef7d8-home-olu-npm-mocha-2-1-0-package tar:///home/olu/.npm/mocha/2.1.0/package
+236 silly lockFile 5c6ef7d8-home-olu-npm-mocha-2-1-0-package tar:///home/olu/.npm/mocha/2.1.0/package
+237 silly lockFile e78be83a--olu-npm-mocha-2-1-0-package-tgz tar:///home/olu/.npm/mocha/2.1.0/package.tgz
+238 silly lockFile e78be83a--olu-npm-mocha-2-1-0-package-tgz tar:///home/olu/.npm/mocha/2.1.0/package.tgz
+239 verbose chmod /home/olu/.npm/mocha/2.1.0/package.tgz 644
+240 verbose chown /home/olu/.npm/mocha/2.1.0/package.tgz [ 1000, 1000 ]
+241 silly lockFile ff48524b--npmjs-org-mocha-mocha-2-1-0-tgz https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+242 silly lockFile ff48524b--npmjs-org-mocha-mocha-2-1-0-tgz https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz
+243 silly lockFile f9a4f261-mocha-2-1-0 mocha@2.1.0
+244 silly lockFile f9a4f261-mocha-2-1-0 mocha@2.1.0
+245 silly lockFile b9899f31-mocha mocha@
+246 silly lockFile b9899f31-mocha mocha@
+247 silly resolved [ { name: 'mocha',
+247 silly resolved     version: '2.1.0',
+247 silly resolved     description: 'simple, flexible, fun test framework',
+247 silly resolved     keywords: [ 'mocha', 'test', 'bdd', 'tdd', 'tap' ],
+247 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+247 silly resolved     contributors:
+247 silly resolved      [ [Object],
+247 silly resolved        [Object],
+247 silly resolved        [Object],
+247 silly resolved        [Object],
+247 silly resolved        [Object],
+247 silly resolved        [Object],
+247 silly resolved        [Object],
+247 silly resolved        [Object] ],
+247 silly resolved     repository: { type: 'git', url: 'git://github.com/mochajs/mocha.git' },
+247 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+247 silly resolved     main: './index',
+247 silly resolved     browser: './mocha.js',
+247 silly resolved     bin: { mocha: './bin/mocha', _mocha: './bin/_mocha' },
+247 silly resolved     engines: { node: '>= 0.8.x' },
+247 silly resolved     scripts: { test: 'make test-all' },
+247 silly resolved     dependencies:
+247 silly resolved      { commander: '2.3.0',
+247 silly resolved        debug: '2.0.0',
+247 silly resolved        diff: '1.0.8',
+247 silly resolved        'escape-string-regexp': '1.0.2',
+247 silly resolved        glob: '3.2.3',
+247 silly resolved        growl: '1.8.1',
+247 silly resolved        jade: '0.26.3',
+247 silly resolved        mkdirp: '0.5.0' },
+247 silly resolved     devDependencies: { 'coffee-script': '~1.8.0', should: '~4.0.0' },
+247 silly resolved     files:
+247 silly resolved      [ 'bin',
+247 silly resolved        'images',
+247 silly resolved        'lib',
+247 silly resolved        'index.js',
+247 silly resolved        'mocha.css',
+247 silly resolved        'mocha.js',
+247 silly resolved        'LICENSE' ],
+247 silly resolved     licenses: [ [Object] ],
+247 silly resolved     readme: ' [![Build Status](https://secure.travis-ci.org/mochajs/mocha.png)](http://travis-ci.org/mochajs/mocha)\n\n  [![Mocha test framework](http://f.cl.ly/items/3l1k0n2A1U3M1I1L210p/Screen%20Shot%202012-02-24%20at%202.21.43%20PM.png)](http://mochajs.org)\n\n  Mocha is a simple, flexible, fun JavaScript test framework for node.js and the browser. For more information view the [documentation](http://mochajs.org).\n\n## Contributors\n\n```\n project  : mocha\n repo age : 3 years, 4 months\n active   : 509 days\n commits  : 1575\n files    : 153\n authors  :\n   977\tTJ Holowaychuk          62.0%\n   132\tTravis Jeffery          8.4%\n    63\tChristopher Hiller      4.0%\n    31\tGuillermo Rauch         2.0%\n    27\tJoshua Appelman         1.7%\n    13\tAttila Domokos          0.8%\n    10\tJohn Firebaugh          0.6%\n     8\tNathan Rajlich          0.5%\n     8\tJo Liss                 0.5%\n     6\tMike Pennisi            0.4%\n     6\tBrendan Nee             0.4%\n     6\tJames Carr              0.4%\n     5\tAaron Heckmann          0.3%\n     5\tRaynos                  0.3%\n     5\tRyunosuke SATO          0.3%\n     4\thokaccha                0.3%\n     4\tJonathan Ong            0.3%\n     4\tJoshua Krall            0.3%\n     4\tDomenic Denicola        0.3%\n     4\tForbes Lindesay         0.3%\n     4\tXavier Antoviaque       0.3%\n     4\tDavid da Silva          0.3%\n     3\tAriel Mashraki          0.2%\n     3\tBen Bradley             0.2%\n     3\tMerrick Christensen     0.2%\n     3\tAndreas Lind Petersen   0.2%\n     3\tNathan Bowser           0.2%\n     3\tCory Thomas             0.2%\n     3\tBenjie Gillam           0.2%\n     3\tWil Moore III           0.2%\n     3\tBen Lindsey             0.2%\n     3\tTyson Tate              0.2%\n     3\tPaul Miller             0.2%\n     3\teiji.ienaga             0.2%\n     3\tMathieu Desvé           0.2%\n     3\tJesse Dailey            0.2%\n     3\tfool2fish               0.2%\n     3\tFredrik Enestad         0.2%\n     3\tSindre Sorhus           0.2%\n     3\tValentin Agachi         0.2%\n     2\tjsdevel                 0.1%\n     2\tArian Stolwijk          0.1%\n     2\tJuzer Ali               0.1%\n     2\tDavid Henderson         0.1%\n     2\tJustin DuJardin         0.1%\n     2\tPaul Armstrong          0.1%\n     2\tPete Hawkins            0.1%\n     2\tJonas Westerlund        0.1%\n     2\tQuang Van               0.1%\n     2\tSimon Gaeremynck        0.1%\n     2\ttravis jeffery          0.1%\n     2\tDominique Quatravaux    0.1%\n     2\tJacob Wejendorp         0.1%\n     2\tShawn Krisman           0.1%\n     2\tFARKAS Máté             0.1%\n     2\tKonstantin Käfer        0.1%\n     2\tTimo Tijhof             0.1%\n     2\tSean Lang               0.1%\n     2\tQuanlong He             0.1%\n     2\tGlen Mailer             0.1%\n     2\tAlexander Early         0.1%\n     2\tIan Storm Taylor        0.1%\n     2\tBrian Beck              0.1%\n     2\tMichael Riley           0.1%\n     2\tMichael Schoonmaker     0.1%\n     2\tdomenic                 0.1%\n     2\tfcrisci                 0.1%\n     2\tBuck Doyle              0.1%\n     2\tNathan Alderson         0.1%\n     1\tMal Graty               0.1%\n     1\tMarc Kuo                0.1%\n     1\tMatija Marohnić         0.1%\n     1\tMatt Robenolt           0.1%\n     1\tMatt Smith              0.1%\n     1\tMatthew Shanley         0.1%\n     1\tMattias Tidlund         0.1%\n     1\tMichael Jackson         0.1%\n     1\tMichael Olson           0.1%\n     1\tMichal Charemza         0.1%\n     1\tNathan Black            0.1%\n     1\tNick Fitzgerald         0.1%\n     1\tNoshir Patel            0.1%\n     1\tPanu Horsmalahti        0.1%\n     1\tPhil Sung               0.1%\n     1\tR56                     0.1%\n     1\tRefael Ackermann        0.1%\n     1\tRichard Dingwall        0.1%\n     1\tRichard Knop            0.1%\n     1\tRob Wu                  0.1%\n     1\tRomain Prieto           0.1%\n     1\tRoman Neuhauser         0.1%\n     1\tRoman Shtylman          0.1%\n     1\tRuss Bradberry          0.1%\n     1\tRussell Munson          0.1%\n     1\tRustem Mustafin         0.1%\n     1\tSalehen Shovon Rahman   0.1%\n     1\tSasha Koss              0.1%\n     1\tSeiya Konno             0.1%\n     1\tShaine Hatch            0.1%\n     1\tSimon Goumaz            0.1%\n     1\tStanda Opichal          0.1%\n     1\tStephen Mathieson       0.1%\n     1\tSteve Mason             0.1%\n     1\tTapiwa Kelvin           0.1%\n     1\tTeddy Zeenny            0.1%\n     1\tTim Ehat                0.1%\n     1\tVadim Nikitin           0.1%\n     1\tVictor Costan           0.1%\n     1\tWill Langstroth         0.1%\n     1\tYanis Wang              0.1%\n     1\tYuest Wang              0.1%\n     1\tZsolt Takács            0.1%\n     1\tabrkn                   0.1%\n     1\tairportyh               0.1%\n     1\tbadunk                  0.1%\n     1\tclaudyus                0.1%\n     1\tdasilvacontin           0.1%\n     1\tfengmk2                 0.1%\n     1\tgaye                    0.1%\n     1\tgrasGendarme            0.1%\n     1\tlakmeer                 0.1%\n     1\tlodr                    0.1%\n     1\tmrShturman              0.1%\n     1\tnishigori               0.1%\n     1\tomardelarosa            0.1%\n     1\tqiuzuhui                0.1%\n     1\tsamuel goldszmidt       0.1%\n     1\tsebv                    0.1%\n     1\tstartswithaj            0.1%\n     1\ttgautier@yahoo.com      0.1%\n     1\ttraleig1                0.1%\n     1\tvlad                    0.1%\n     1\tyuitest                 0.1%\n     1\tzhiyelee                0.1%\n     1\tAdam Crabtree           0.1%\n     1\tAndreas Brekken         0.1%\n     1\tAndrew Nesbitt          0.1%\n     1\tAndrey Popp             0.1%\n     1\tArnaud Brousseau        0.1%\n     1\tAtsuya Takagi           0.1%\n     1\tAustin Birch            0.1%\n     1\tBen Noordhuis           0.1%\n     1\tBjørge Næss             0.1%\n     1\tBrian Lalor             0.1%\n     1\tBrian M. Carlson        0.1%\n     1\tBrian Moore             0.1%\n     1\tBryan Donovan           0.1%\n     1\tC. Scott Ananian        0.1%\n     1\tCasey Foster            0.1%\n     1\tChrisWren               0.1%\n     1\tConnor Dunn             0.1%\n     1\tCorey Butler            0.1%\n     1\tDaniel Stockman         0.1%\n     1\tDave McKenna            0.1%\n     1\tDenis Bardadym          0.1%\n     1\tDevin Weaver            0.1%\n     1\tDi Wu                   0.1%\n     1\tDiogo Monteiro          0.1%\n     1\tDmitry Shirokov         0.1%\n     1\tDr. Travis Jeffery      0.1%\n     1\tFedor Indutny           0.1%\n     1\tFlorian Margaine        0.1%\n     1\tFrederico Silva         0.1%\n     1\tFredrik Lindin          0.1%\n     1\tGareth Aye              0.1%\n     1\tGareth Murphy           0.1%\n     1\tGavin Mogan             0.1%\n     1\tGiovanni Bassi          0.1%\n     1\tGlen Huang              0.1%\n     1\tGreg Perkins            0.1%\n     1\tHarish                  0.1%\n     1\tHarry Brundage          0.1%\n     1\tHerman Junge            0.1%\n     1\tIan Young               0.1%\n     1\tIvan                    0.1%\n     1\tJP Bochi                0.1%\n     1\tJaakko Salonen          0.1%\n     1\tJakub Nešetřil          0.1%\n     1\tJames Bowes             0.1%\n     1\tJames Lal               0.1%\n     1\tJan Kopriva             0.1%\n     1\tJason Barry             0.1%\n     1\tJavier Aranda           0.1%\n     1\tJean Ponchon            0.1%\n     1\tJeff Kunkle             0.1%\n     1\tJeremy Martin           0.1%\n     1\tJimmy Cuadra            0.1%\n     1\tJohn Doty               0.1%\n     1\tJonathan Creamer        0.1%\n     1\tJonathan Park           0.1%\n     1\tJussi Virtanen          0.1%\n     1\tKatie Gengler           0.1%\n     1\tKazuhito Hokamura       0.1%\n     1\tKent C. Dodds           0.1%\n     1\tKevin Conway            0.1%\n     1\tKirill Korolyov         0.1%\n     1\tKoen Punt               0.1%\n     1\tLaszlo Bacsi            0.1%\n     1\tLiam Newman             0.1%\n     1\tLinus Unnebäck          0.1%\n     1\tLászló Bácsi            0.1%\n     1\tMaciej Małecki          0.1%\n```\n\n## Links\n\n  - [Google Group](http://groups.google.com/group/mochajs)\n  - [Wiki](https://github.com/mochajs/mocha/wiki)\n  - Mocha [Extensions and reporters](https://github.com/mochajs/mocha/wiki)\n\nMocha also has a chat room on [Slack](https://slack.com). If you\'d like to join, [shoot us an email](mailto:tj@travisjeffery.com?subject=mocha%20slack%20room%20invite) from the address you want us to invite you under and we\'ll happily send you an invite!\n',
+247 silly resolved     readmeFilename: 'README.md',
+247 silly resolved     bugs: { url: 'https://github.com/mochajs/mocha/issues' },
+247 silly resolved     _id: 'mocha@2.1.0',
+247 silly resolved     dist: { shasum: '5ae081767e6b14ef42fc3f1d6d860fdfb2d96276' },
+247 silly resolved     _from: 'mocha@',
+247 silly resolved     _resolved: 'https://registry.npmjs.org/mocha/-/mocha-2.1.0.tgz' } ]
+248 info install mocha@2.1.0 into /usr/local/lib
+249 info installOne mocha@2.1.0
+250 info /usr/local/lib/node_modules/mocha unbuild
+251 verbose tar unpack /home/olu/.npm/mocha/2.1.0/package.tgz
+252 silly lockFile 746f3f6f-usr-local-lib-node-modules-mocha tar:///usr/local/lib/node_modules/mocha
+253 verbose lock tar:///usr/local/lib/node_modules/mocha /home/olu/.npm/746f3f6f-usr-local-lib-node-modules-mocha.lock
+254 silly lockFile e78be83a--olu-npm-mocha-2-1-0-package-tgz tar:///home/olu/.npm/mocha/2.1.0/package.tgz
+255 verbose lock tar:///home/olu/.npm/mocha/2.1.0/package.tgz /home/olu/.npm/e78be83a--olu-npm-mocha-2-1-0-package-tgz.lock
+256 silly gunzTarPerm modes [ '755', '644' ]
+257 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+257 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+257 error   errno: 3,
+257 error   code: 'EACCES',
+257 error   path: '/usr/local/lib/node_modules',
+257 error   fstream_type: 'Directory',
+257 error   fstream_path: '/usr/local/lib/node_modules/mocha',
+257 error   fstream_class: 'DirWriter',
+257 error   fstream_stack:
+257 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+257 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+257 error      'Object.oncomplete (fs.js:107:15)' ] }
+258 error Please try running this command again as root/Administrator.
+259 error System Linux 3.13.0-44-generic
+260 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "mocha"
+261 error cwd /home/olu/TEAM-SORD.github.io
+262 error node -v v0.10.25
+263 error npm -v 1.3.10
+264 error path /usr/local/lib/node_modules
+265 error fstream_path /usr/local/lib/node_modules/mocha
+266 error fstream_type Directory
+267 error fstream_class DirWriter
+268 error code EACCES
+269 error errno 3
+270 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+271 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+271 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+271 error fstream_stack Object.oncomplete (fs.js:107:15)
+272 verbose exit [ 3, true ]
