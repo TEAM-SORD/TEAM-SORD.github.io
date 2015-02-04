@@ -42,6 +42,13 @@ html, body, .container-fluid {
     margin: -50px 0 0;
 }
 
+#blogs:before {
+    display: block;
+    content: "";
+    height: 15px;
+    margin: -50px 0 0;
+}
+
 #contact:before {
     display: block;
     content: "";
@@ -49,12 +56,26 @@ html, body, .container-fluid {
     margin: -50px 0 0;
 }
 
-#team, #projects, #contact {
+#team, #projects, #contact, #blogs {
   padding: 80px 0 20px;
 }
 
-#team, #projects, #contact {
+#team, #projects, #contact, #blogs {
   height:100vh;
+}
+
+div .row .col-lg-4, div .row .col-lg-3  {
+  height: 250px;
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 section {
@@ -90,7 +111,6 @@ section {
     bottom:50%;
 }
 
-
 body {
   /*background-color: teal;*/
   font-family: 'Orbitron', serif;
@@ -99,7 +119,6 @@ body {
 h1 {
   text-align: center;
 }
-
 
 #toprow {
   margin-top: 40px;
@@ -116,7 +135,6 @@ h1 {
 header {
     height:100%;
 }
-
 
 #splash {
   display: block;
@@ -155,7 +173,6 @@ body {
   padding:0px;
 }
 
-
 .image-thumb {
   position:relative;
   height: 300px;
@@ -191,10 +208,6 @@ body {
 .clear {
   clear: both;
 }
-
-
-
-
 
 /*@media screen and (max-width:1200px) {
   .image-thumb {
